@@ -199,6 +199,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\OdeToFoodDb.mdf" />
+    <Content Include="App_Data\OdeToFoodDb_log.ldf">
+      <DependentUpon>OdeToFoodDb.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\images\OdeToFood.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -328,9 +332,7 @@
     <Content Include="Views\Reviews\Edit.cshtml" />
     <Content Include="Views\Home\_Restaurants.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -360,7 +362,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>23193</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:56470/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
